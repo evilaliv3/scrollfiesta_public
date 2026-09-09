@@ -39,6 +39,7 @@ build/
 
 # ------ Linux build binaries (src/, from the Makefile) ------
 /src/cube_mesh
+/src/obj_bake_raw
 /src/grid_weld
 /src/grid_pipeline
 /src/test_common
@@ -77,6 +78,12 @@ deps/bin/
 deps/lib/win64/
 # Linux-built static libs (rebuilt from deps/src/)
 deps/lib/*.a
+# staged by build-deps.sh together with the vendored libtiff
+deps/lib/tiff.flags
+deps/include/tiff.h
+deps/include/tiffio.h
+deps/include/tiffconf.h
+deps/include/tiffvers.h
 # CMake build directories within vendored sources
 deps/src/tiff-4.7.1/bld/
 deps/src/Clipper2/CPP/build/
